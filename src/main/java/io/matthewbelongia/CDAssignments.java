@@ -22,7 +22,8 @@ public class CDAssignments {
         //javaFiboDisplayAll(5);
         //disp("test");
         //disp("test1","test2");
-        vampireNumber();
+        //vampireNumber();
+        countToN();
 
     }
 
@@ -154,12 +155,15 @@ public class CDAssignments {
         }
     }
 
-    public void countToN(){
+    public static void countToN(){
+        int result=0;
         Scanner numberIntake = new Scanner(System.in);
         int number = numberIntake.nextInt();
         for(int q =0;q<number;q++){
+            result += q;
             System.out.println(q);
         }
+        System.out.println(result);
     }
 
 
